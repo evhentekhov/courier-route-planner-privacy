@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - Courier Route Planner</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+            background-color: #f9f9f9;
+        }
+        .container {
+            background: white;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #2c3e50;
+            border-bottom: 3px solid #3498db;
+            padding-bottom: 10px;
+        }
+        h2 {
+            color: #2980b9;
+            margin-top: 30px;
+        }
+        h3 {
+            color: #34495e;
+            margin-top: 20px;
+        }
+        ul, ol {
+            margin-left: 20px;
+        }
+        strong {
+            color: #2c3e50;
+        }
+        a {
+            color: #3498db;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .last-updated {
+            color: #7f8c8d;
+            font-style: italic;
+            margin-bottom: 20px;
+        }
+        .summary-box {
+            background: #ecf0f1;
+            padding: 20px;
+            border-radius: 5px;
+            border-left: 4px solid #3498db;
+            margin: 20px 0;
+        }
+        code {
+            background: #f4f4f4;
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-family: 'Courier New', monospace;
+        }
+        @media (max-width: 600px) {
+            body {
+                padding: 10px;
+            }
+            .container {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Privacy Policy for Courier Route Planner</h1>
+        <p class="last-updated"><strong>Last Updated:</strong> January 28, 2026</p>
+
+        <h2>Introduction</h2>
+        <p>Courier Route Planner ("we", "our", or "the app") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, and share information when you use our mobile application.</p>
+
+        <h2>Information We Collect</h2>
+
+        <h3>1. Location Data</h3>
+        <p><strong>What we collect:</strong></p>
+        <ul>
+            <li>Your current location (latitude and longitude coordinates)</li>
+            <li>Addresses you search for or add to routes</li>
+            <li>Location coordinates for route stops</li>
+        </ul>
+
+        <p><strong>How we collect it:</strong></p>
+        <ul>
+            <li>We request foreground location permission when you use the app</li>
+            <li>Location is accessed only when the app is active (not in background tracking)</li>
+            <li>Location is used to:
+                <ul>
+                    <li>Set your starting point for routes</li>
+                    <li>Optimize delivery routes</li>
+                    <li>Display your position on the map</li>
+                    <li>Bias address search results to your area</li>
+                    <li>Preload map tiles for faster performance</li>
+                </ul>
+            </li>
+        </ul>
+
+        <p><strong>Permission required:</strong></p>
+        <ul>
+            <li>iOS: "Location When In Use"</li>
+            <li>Android: <code>ACCESS_FINE_LOCATION</code> and <code>ACCESS_COARSE_LOCATION</code></li>
+        </ul>
+
+        <h3>2. Route Information</h3>
+        <p><strong>What we collect:</strong></p>
+        <ul>
+            <li>Route names and scheduled start times</li>
+            <li>Stop addresses and coordinates</li>
+            <li>Route optimization data (distances, travel times, ETAs)</li>
+            <li>Route progress (which stops are completed)</li>
+            <li>Timestamps for route creation and completion</li>
+        </ul>
+
+        <p><strong>Where it's stored:</strong></p>
+        <ul>
+            <li>Cloud: Firebase Firestore (Google Cloud)</li>
+            <li>Local device: Temporary draft routes and recent searches</li>
+        </ul>
+
+        <h3>3. Device Information</h3>
+        <p><strong>Automatically collected:</strong></p>
+        <ul>
+            <li>Device model and manufacturer</li>
+            <li>Operating system version (iOS/Android)</li>
+            <li>App version and build number</li>
+            <li>Platform type (iOS/Android)</li>
+            <li>Device identifier (Android: ANDROID_ID, iOS: IDFV)</li>
+        </ul>
+        <p><strong>Purpose:</strong> Analytics and app performance monitoring</p>
+
+        <h3>4. Usage Data</h3>
+        <p><strong>We collect analytics about:</strong></p>
+        <ul>
+            <li>Features you use (optimize route, navigate, etc.)</li>
+            <li>Screens you view</li>
+            <li>App launches and session duration</li>
+            <li>Number of routes created and completed</li>
+            <li>Number of stops optimized</li>
+            <li>Search queries and address selections</li>
+        </ul>
+        <p><strong>Service used:</strong> Firebase Analytics (Google)</p>
+
+        <h3>5. User Preferences</h3>
+        <p><strong>Stored locally on your device:</strong></p>
+        <ul>
+            <li>Preferred navigation app (Google Maps, Waze, etc.)</li>
+            <li>Distance unit preference (kilometers or miles)</li>
+            <li>Onboarding completion status</li>
+            <li>App review status</li>
+            <li>Recent address searches (last 5 addresses)</li>
+        </ul>
+
+        <h3>6. Account Information</h3>
+        <p><strong>What we collect:</strong></p>
+        <ul>
+            <li>Anonymous user ID (no email or password required)</li>
+            <li>Subscription tier (free or premium)</li>
+            <li>Usage limits and counters (stops per route, monthly limit)</li>
+            <li>Account creation date</li>
+        </ul>
+        <p><strong>Note:</strong> We use Firebase Anonymous Authentication. No email, name, or password is collected.</p>
+
+        <h2>How We Use Your Information</h2>
+
+        <h3>Primary Uses</h3>
+        <ol>
+            <li><strong>Route Optimization:</strong> Calculate the most efficient order for your delivery stops</li>
+            <li><strong>Navigation:</strong> Display routes on maps and provide turn-by-turn navigation via third-party map apps</li>
+            <li><strong>Service Improvement:</strong> Understand how users interact with the app to improve features</li>
+            <li><strong>Subscription Management:</strong> Track usage limits for free vs. premium users</li>
+            <li><strong>Local Storage:</strong> Save recent searches and preferences for convenience</li>
+        </ol>
+
+        <h3>We DO NOT:</h3>
+        <ul>
+            <li>Track your location in the background</li>
+            <li>Sell your data to third parties</li>
+            <li>Use your data for advertising</li>
+            <li>Share your data with other users</li>
+        </ul>
+
+        <h2>Third-Party Services</h2>
+
+        <h3>1. Firebase (Google)</h3>
+        <p><strong>Services used:</strong> Authentication (anonymous sign-in), Firestore database (route and user data storage), Analytics (usage tracking)</p>
+        <p><strong>Data shared:</strong> User ID, device info, route data, usage events</p>
+        <p><strong>Privacy policy:</strong> <a href="https://firebase.google.com/support/privacy" target="_blank">https://firebase.google.com/support/privacy</a></p>
+
+        <h3>2. Mapbox</h3>
+        <p><strong>Service:</strong> Route optimization and directions API</p>
+        <p><strong>Data shared:</strong> Stop coordinates (latitude/longitude) for route calculation</p>
+        <p><strong>Privacy policy:</strong> <a href="https://www.mapbox.com/legal/privacy" target="_blank">https://www.mapbox.com/legal/privacy</a></p>
+
+        <h3>3. Photon by Komoot</h3>
+        <p><strong>Service:</strong> Address geocoding and search</p>
+        <p><strong>Data shared:</strong> Search queries, user location coordinates (for location bias)</p>
+        <p><strong>Privacy policy:</strong> <a href="https://www.komoot.com/privacy" target="_blank">https://www.komoot.com/privacy</a></p>
+
+        <h3>4. CartoDB</h3>
+        <p><strong>Service:</strong> Map tiles for displaying maps</p>
+        <p><strong>Data shared:</strong> Tile coordinates (derived from visible map area)</p>
+        <p><strong>Privacy policy:</strong> <a href="https://carto.com/legal/privacy/" target="_blank">https://carto.com/legal/privacy/</a></p>
+
+        <h2>Data Storage and Security</h2>
+
+        <h3>Cloud Storage (Firebase Firestore)</h3>
+        <ul>
+            <li><strong>Location:</strong> Google Cloud servers (location depends on Firebase project region)</li>
+            <li><strong>Security:</strong> Encrypted in transit (HTTPS) and at rest</li>
+            <li><strong>Access control:</strong> Users can only access their own data (enforced by security rules)</li>
+        </ul>
+
+        <h3>Local Storage</h3>
+        <ul>
+            <li><strong>Encrypted:</strong> User authentication ID (SecureStore)</li>
+            <li><strong>Unencrypted:</strong> Route drafts, recent searches, preferences (AsyncStorage)</li>
+            <li><strong>Deletion:</strong> Cleared when app is uninstalled</li>
+        </ul>
+
+        <h3>Security Measures</h3>
+        <ul>
+            <li>All network requests use HTTPS encryption</li>
+            <li>Firebase Security Rules prevent unauthorized access</li>
+            <li>No password storage (anonymous authentication)</li>
+            <li>Data scoped to individual user accounts</li>
+        </ul>
+
+        <h2>Data Retention</h2>
+        <ul>
+            <li><strong>Routes:</strong> Stored for <strong>30 days</strong> from the last modification date, then automatically deleted. You can also delete routes manually at any time from the "My Routes" screen.</li>
+            <li><strong>User profile:</strong> Retained while your account is active. Automatically deleted after <strong>30 days</strong> of inactivity (no app usage).</li>
+            <li><strong>Recent searches:</strong> Last 5 addresses only, cleared when app is uninstalled</li>
+            <li><strong>Analytics:</strong> Subject to Firebase Analytics retention policies (typically 2-14 months)</li>
+            <li><strong>Local cache:</strong> Cleared when you uninstall the app</li>
+        </ul>
+        <p><strong>Note:</strong> The 30-day retention period ensures your data is not kept longer than necessary while giving you sufficient time to access recent routes.</p>
+
+        <h2>Your Rights and Choices</h2>
+
+        <h3>You can:</h3>
+        <ol>
+            <li><strong>Delete routes:</strong> Delete any route from the "My Routes" screen</li>
+            <li><strong>Clear recent searches:</strong> Automatically limited to last 5 addresses</li>
+            <li><strong>Change preferences:</strong> Update distance units and navigation app in Settings</li>
+            <li><strong>Delete all data:</strong> Uninstall the app to remove all local data</li>
+            <li><strong>Request data deletion:</strong> Contact us to delete your Firebase data</li>
+        </ol>
+
+        <h3>Location Permission:</h3>
+        <ul>
+            <li>You can revoke location permission in device settings at any time</li>
+            <li>The app will function with limited features without location access</li>
+            <li>No background location tracking - location is only accessed when app is in use</li>
+        </ul>
+
+        <h3>Notifications:</h3>
+        <ul>
+            <li>You can disable notifications in device settings</li>
+            <li>Notifications are used only for active route navigation reminders</li>
+            <li>No promotional or marketing notifications</li>
+        </ul>
+
+        <h2>Children's Privacy</h2>
+        <p>This app is not directed to children under 13 years of age. We do not knowingly collect personal information from children under 13. If you believe a child has provided us with personal information, please contact us.</p>
+
+        <h2>Changes to This Policy</h2>
+        <p>We may update this Privacy Policy from time to time. We will notify you of any changes by:</p>
+        <ul>
+            <li>Updating the "Last Updated" date at the top of this policy</li>
+            <li>Showing an in-app notice for significant changes (if applicable)</li>
+        </ul>
+        <p>Your continued use of the app after changes indicates acceptance of the updated policy.</p>
+
+        <h2>Data Deletion Request</h2>
+        <p>To request deletion of your data:</p>
+        <ol>
+            <li>Uninstall the app (deletes all local data)</li>
+            <li>Email us to request Firebase data deletion (provide your device ID or approximate account creation date)</li>
+        </ol>
+
+        <h2>Contact Information</h2>
+        <p>If you have questions about this Privacy Policy or our data practices, please contact us:</p>
+        <p><strong>Email:</strong> [Your Contact Email]</p>
+        <p><strong>Developer:</strong> [Your Name/Company Name]</p>
+
+        <h2>Legal Compliance</h2>
+        <p>This Privacy Policy complies with:</p>
+        <ul>
+            <li>Google Play Developer Policy</li>
+            <li>GDPR (General Data Protection Regulation) - for EU users</li>
+            <li>CCPA (California Consumer Privacy Act) - for California users</li>
+            <li>Other applicable data protection laws</li>
+        </ul>
+
+        <div class="summary-box">
+            <h2>Summary</h2>
+            
+            <p><strong>What we collect:</strong></p>
+            <ul>
+                <li>Location (foreground only, when app is in use)</li>
+                <li>Routes and addresses you create</li>
+                <li>Device info and usage analytics</li>
+                <li>User preferences</li>
+            </ul>
+
+            <p><strong>Why we collect it:</strong></p>
+            <ul>
+                <li>Optimize your delivery routes</li>
+                <li>Display routes on maps</li>
+                <li>Improve app performance</li>
+                <li>Track usage limits (free vs. premium)</li>
+            </ul>
+
+            <p><strong>Who we share it with:</strong></p>
+            <ul>
+                <li>Firebase/Google (data storage and analytics)</li>
+                <li>Mapbox (route optimization)</li>
+                <li>Photon/Komoot (address search)</li>
+                <li>CartoDB (map tiles)</li>
+            </ul>
+
+            <p><strong>We do NOT:</strong></p>
+            <ul>
+                <li>Track location in background</li>
+                <li>Sell your data</li>
+                <li>Share with advertisers</li>
+                <li>Require personal information (email, name, phone)</li>
+            </ul>
+        </div>
+
+        <hr style="margin: 30px 0; border: none; border-top: 1px solid #ddd;">
+        <p style="text-align: center; color: #7f8c8d;">By using Courier Route Planner, you agree to this Privacy Policy.</p>
+    </div>
+</body>
+</html>

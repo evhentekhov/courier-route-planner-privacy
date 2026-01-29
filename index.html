@@ -140,7 +140,15 @@
         </ul>
         <p><strong>Purpose:</strong> Analytics and app performance monitoring</p>
 
-        <h3>4. Usage Data</h3>
+        <h3>4. Crash Reports</h3>
+        <p><strong>Collected via Firebase Crashlytics:</strong></p>
+        <ul>
+            <li>Crash reports and stack traces when the app crashes</li>
+            <li>Device state at the time of crash (OS version, app version, etc.)</li>
+        </ul>
+        <p><strong>Purpose:</strong> Identify and fix stability issues. Not collected in debug/development builds.</p>
+
+        <h3>5. Usage Data</h3>
         <p><strong>We collect analytics about:</strong></p>
         <ul>
             <li>Features you use (optimize route, navigate, etc.)</li>
@@ -152,7 +160,7 @@
         </ul>
         <p><strong>Service used:</strong> Firebase Analytics (Google)</p>
 
-        <h3>5. User Preferences</h3>
+        <h3>6. User Preferences</h3>
         <p><strong>Stored locally on your device:</strong></p>
         <ul>
             <li>Preferred navigation app (Google Maps, Waze, etc.)</li>
@@ -162,7 +170,7 @@
             <li>Recent address searches (last 5 addresses)</li>
         </ul>
 
-        <h3>6. Account Information</h3>
+        <h3>7. Account Information</h3>
         <p><strong>What we collect:</strong></p>
         <ul>
             <li>Anonymous user ID (no email or password required)</li>
@@ -194,8 +202,8 @@
         <h2>Third-Party Services</h2>
 
         <h3>1. Firebase (Google)</h3>
-        <p><strong>Services used:</strong> Authentication (anonymous sign-in), Firestore database (route and user data storage), Analytics (usage tracking)</p>
-        <p><strong>Data shared:</strong> User ID, device info, route data, usage events</p>
+        <p><strong>Services used:</strong> Authentication (anonymous sign-in), Firestore database (route and user data storage), Analytics (usage tracking), Crashlytics (crash reporting)</p>
+        <p><strong>Data shared:</strong> User ID, device info, route data, usage events, crash reports</p>
         <p><strong>Privacy policy:</strong> <a href="https://firebase.google.com/support/privacy" target="_blank">https://firebase.google.com/support/privacy</a></p>
 
         <h3>2. Mapbox</h3>
@@ -243,6 +251,7 @@
             <li><strong>User profile:</strong> Retained while your account is active. Automatically deleted after <strong>30 days</strong> of inactivity (no app usage).</li>
             <li><strong>Recent searches:</strong> Last 5 addresses only, cleared when app is uninstalled</li>
             <li><strong>Analytics:</strong> Subject to Firebase Analytics retention policies (typically 2-14 months)</li>
+            <li><strong>Crash reports:</strong> Subject to Firebase Crashlytics retention policies (typically 90 days)</li>
             <li><strong>Local cache:</strong> Cleared when you uninstall the app</li>
         </ul>
         <p><strong>Note:</strong> The 30-day retention period ensures your data is not kept longer than necessary while giving you sufficient time to access recent routes.</p>
@@ -311,7 +320,7 @@
             <ul>
                 <li>Location (foreground only, when app is in use)</li>
                 <li>Routes and addresses you create</li>
-                <li>Device info and usage analytics</li>
+                <li>Device info, usage analytics, and crash reports</li>
                 <li>User preferences</li>
             </ul>
 
@@ -325,7 +334,7 @@
 
             <p><strong>Who we share it with:</strong></p>
             <ul>
-                <li>Firebase/Google (data storage and analytics)</li>
+                <li>Firebase/Google (data storage, analytics, crash reporting)</li>
                 <li>Mapbox (route optimization)</li>
                 <li>Photon/Komoot (address search)</li>
                 <li>CartoDB (map tiles)</li>
